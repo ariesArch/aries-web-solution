@@ -2,7 +2,7 @@
 templateKey: 'index-page'
 title: 'Great coffee with a conscience'
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
+heading: Hello Welcome from Read Lion . I'm Heading
 subheading: Support sustainable farming while enjoying a cup
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
