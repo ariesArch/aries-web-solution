@@ -1,14 +1,12 @@
 .wrapper {
-	/*box-shadow: 12px 1px 13px 4px #50aeb1;*/
-	/*50aeb1*/
-	/*box-shadow: -4px 8px 118px 21px rgba(7,99,50,1);*/
+	box-shadow: -4px 8px 118px 21px rgb(180, 215, 196);
 }
+
 .card {
-	/*box-shadow: 2px 2px 4px 4px #1a7d4c;*/
-	box-shadow: -4px 8px 118px 21px rgba(7,99,50,1);
-	/*50aeb1*/
+  box-shadow: -4px 8px 118px 21px rgba(7,99,50,1);
 }
-.card-title {
+
+.post-title {
 	color:#1a7d4c;
 }
 

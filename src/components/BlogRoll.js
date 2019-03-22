@@ -19,7 +19,7 @@ class BlogRoll extends React.Component {
             <article className="tile is-child box notification card" style={{
           fontFamily:'Pyidaungsu'}}>
               <p>
-                <Link className="title has-text-success is-size-4 card-title" to={post.fields.slug}>
+                <Link className="title has-text-success is-size-4 post-title" to={post.fields.slug}>
                   {post.frontmatter.title}
                 </Link>
                 <span> &bull; </span>

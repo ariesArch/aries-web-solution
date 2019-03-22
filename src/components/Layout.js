@@ -63,7 +63,7 @@ const TemplateWrapper = ({ children }) => (
         <Navbar />
         <div style={{
           fontFamily:'Pyidaungsu',
-        }} className="card-body">{children}</div>
+        }}>{children}</div>
         <Footer />
       </div>
     )}

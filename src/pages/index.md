@@ -2,14 +2,14 @@
 templateKey: 'index-page'
 image: /img/aries-cover.jpg
 heading: Welcome to Aries Web Solution
-subheading: Support sustainable farming while enjoying a cup
+subheading: Freelance Web Developer Group
 title: Aries Web Solution
 description: >-
   အလွတ်တန်း ပညာရှင်အဖွဲ့အစည်းအဖြစ် ရပ်တည်နေပြီးအရည်အသွေးပြည့်မီသော Web Application, Mobile Application များကို တည်ဆောက်ပေးနေပါသည်။
 mainpitch:
   title: Our Mission
   description: >
-    စေတနာနှင့်  အတတ်ပညာ နှစ်ခုပေါင်းပြီး နှစ်ဦးနှစ်ဖက် ကျေနပ်နှစ်လိုဖွယ်ရာ ဝန်ဆောင်ပေးရန်။
+    စေတနာနှင့်  အတတ်ပညာ နှစ်ခုပေါင်းပြီး နှစ်ဦးနှစ်ဖက် အကျိုးရှိစေမည့် ဝန်ဆောင်ပေးရန်။
 intro:
   blurbs:
     - image: /img/coffee.png
