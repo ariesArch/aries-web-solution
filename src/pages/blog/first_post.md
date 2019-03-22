@@ -1,10 +1,10 @@
 ---
 templateKey: blog-post
-title: Var,Let,Const in ES6
-date: 2019-03-12T19:17:55.612Z
+title: 'Var,Let,Const in ES6'
+date: 2019-03-22T19:17:55.612Z
 description: test
 tags:
-  - es6,var,let,variable
+  - 'es6,var,let,variable'
 ---
 When you declare a variable with the var keyword, it is declared globally, or locally if declared inside a function.
 
