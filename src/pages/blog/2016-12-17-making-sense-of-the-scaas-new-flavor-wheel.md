@@ -1,39 +1,154 @@
 ---
 templateKey: blog-post
-title: Making sense of the SCAA’s new Flavor Wheelsss
-date: 2016-12-17T15:04:10.000Z
-description: >-
-  The Coffee Taster’s Flavor Wheel, the official resource used by coffee
-  tasters, has been revised for the first time this year.
+title: ES6 Variable Declaration
+date: 2019-03-23T07:35:10.000Z
+description: First time to learn ECMAScript2015
 tags:
   - flavor
   - tasting
 ---
-
-![flavor wheel](/img/flavor_wheel.jpg)
-
-အရေအတွက်ထက် အရည်အသွေးကိုသာ သင်တို့လိုအပ်သည်ကို ကျွနုပ်တို့က လေးစားစွာ နားလည်လက်ခံပါသည်။
+When you declare a variable with the var keyword, it is declared globally, or locally if declared inside a function.
 
 
-စေတနာနှင့်  အတတ်ပညာ နှစ်ခုပေါင်းပြီး နှစ်ဦးနှစ်ဖက် ကျေနပ်နှစ်လိုဖွယ်ရာ ဝန်ဆောင်ပေးရန်။
 
-ဝင်ရောက်လေ့လာခြင်းအတွက် ကျေးဇူးအထူးတင်ပါသည်။
- ဝက်(ဘ်)ဆိုက် တွင် ကျန်ရှိနေသော အချက်အလက်များကို ဆက်လက်ဖြည့်သွင်းသွားဦးမည်ဖြစ်ပါသည်။
+The let keyword behaves similarly, but with some extra features. When you declare a variable with the let keyword inside a block, statement, or expression, its scope is limited to that block, statement, or expression.
 
 
-## What the updates mean to you
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+For example:
 
-* producers
-* roasters
-* importers/exporters
-* retailers
-* manufacturers
-* baristas
 
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
 
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
+var numArray = \[];
 
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+for (var i = 0; i < 3; i++) {
+
+numArray.push(i);
+
+}
+
+console.log(numArray);
+
+// returns \[0, 1, 2]
+
+console.log(i);
+
+// returns 3
+
+
+
+With the var keyword, i is declared globally. So when i++ is executed, it updates the global variable. This code is similar to the following:
+
+
+
+var numArray = \[];
+
+var i;
+
+for (i = 0; i < 3; i++) {
+
+numArray.push(i);
+
+}
+
+console.log(numArray);
+
+// returns \[0, 1, 2]
+
+console.log(i);
+
+// returns 3
+
+
+
+This behavior will cause problems if you were to create a function and store it for later use inside a for loop that uses the i variable. This is because the stored function will always refer to the value of the updated global i variable.
+
+
+
+var printNumTwo;
+
+for (var i = 0; i < 3; i++) {
+
+if(i === 2){
+
+printNumTwo = function() {
+
+return i;
+
+};
+
+}
+
+}
+
+console.log(printNumTwo());
+
+// returns 3
+
+
+
+As you can see, printNumTwo() prints 3 and not 2. This is because the value assigned to i was updated and the printNumTwo() returns the global i and not the value i had when the function was created in the for loop. The let keyword does not follow this behavior:
+
+
+
+'use strict';
+
+let printNumTwo;
+
+for (let i = 0; i < 3; i++) {
+
+if (i === 2) {
+
+printNumTwo = function() {
+
+return i;
+
+};
+
+}
+
+}
+
+console.log(printNumTwo());
+
+// returns 2
+
+console.log(i);
+
+// returns "i is not defined"
+
+
+
+i is not defined because it was not declared in the global scope. It is only declared within the for loop statement. printNumTwo() returned the correct value because three different i variables with unique values (0, 1, and 2) were created by the let keyword within the loop statement.
+
+
+
+Fix the code so that i declared in the if statement is a separate variable than i declared in the first line of the function. Be certain not to use the var keyword anywhere in your code.
+
+
+
+This exercise is designed to illustrate the difference between how var and let keywords assign scope to the declared variable. When programming a function similar to the one used in this exercise, it is often better to use different variable names to avoid confusion.
+
+
+
+\----------------------------Lab
+
+function checkScope() {
+
+"use strict";
+
+var i = "function scope";
+
+if (true) {
+
+i = "block scope";
+
+console.log("Block scope i is: ", i);
+
+}
+
+console.log("Function scope i is: ", i);
+
+return i;
+
+}
