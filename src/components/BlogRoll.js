@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-
+import '../styles/global.css'
 class BlogRoll extends React.Component {
 
   render() {
@@ -16,9 +16,10 @@ class BlogRoll extends React.Component {
               className="is-parent column is-6"
               key={post.id}
             >
-            <article className="tile is-child box notification">
+            <article className="tile is-child box notification card" style={{
+          fontFamily:'Pyidaungsu'}}>
               <p>
-                <Link className="title has-text-primary is-size-4" to={post.fields.slug}>
+                <Link className="title has-text-success is-size-4 card-title" to={post.fields.slug}>
                   {post.frontmatter.title}
                 </Link>
                 <span> &bull; </span>
@@ -28,8 +29,8 @@ class BlogRoll extends React.Component {
                 {post.excerpt}
                 <br />
                 <br />
-                <Link className="button" to={post.fields.slug}>
-                  Keep Reading →
+                <Link className="button read-more" to={post.fields.slug}>
+                  Continue Reading →
                 </Link>
               </p>
               </article>

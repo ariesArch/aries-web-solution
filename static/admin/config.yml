@@ -3,7 +3,7 @@
 #   branch: master
 backend:
   name: github
-  repo: kyawyenaing/red-lion # Path to your GitHub repository
+  repo: kyawyenaing/aries-web-solution # Path to your GitHub repository
 
 media_folder: static/img
 public_folder: /img

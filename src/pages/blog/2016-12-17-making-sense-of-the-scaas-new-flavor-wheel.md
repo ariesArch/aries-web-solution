@@ -12,9 +12,14 @@ tags:
 
 ![flavor wheel](/img/flavor_wheel.jpg)
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+အရေအတွက်ထက် အရည်အသွေးကိုသာ သင်တို့လိုအပ်သည်ကို ကျွနုပ်တို့က လေးစားစွာ နားလည်လက်ခံပါသည်။
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+
+စေတနာနှင့်  အတတ်ပညာ နှစ်ခုပေါင်းပြီး နှစ်ဦးနှစ်ဖက် ကျေနပ်နှစ်လိုဖွယ်ရာ ဝန်ဆောင်ပေးရန်။
+
+ဝင်ရောက်လေ့လာခြင်းအတွက် ကျေးဇူးအထူးတင်ပါသည်။
+ ဝက်(ဘ်)ဆိုက် တွင် ကျန်ရှိနေသော အချက်အလက်များကို ဆက်လက်ဖြည့်သွင်းသွားဦးမည်ဖြစ်ပါသည်။
+
 
 ## What the updates mean to you
 

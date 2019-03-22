@@ -1,22 +1,15 @@
 ---
 templateKey: 'index-page'
-title: 'Great coffee with a conscience'
-image: /img/home-jumbotron.jpg
-heading: Hello Welcome from Read Lion . I'm Heading
+image: /img/aries-cover.jpg
+heading: Welcome to Aries Web Solution
 subheading: Support sustainable farming while enjoying a cup
+title: Aries Web Solution
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  အလွတ်တန်း ပညာရှင်အဖွဲ့အစည်းအဖြစ် ရပ်တည်နေပြီးအရည်အသွေးပြည့်မီသော Web Application, Mobile Application များကို တည်ဆောက်ပေးနေပါသည်။
 mainpitch:
-  title: Why Kaldi
+  title: Our Mission
   description: >
-      Kaldi is the coffee store for everyone who believes that
-      great coffee shouldn't just taste good, it should do good
-      too. We source all of our beans directly from small scale
-      sustainable farmers and make sure part of the profits are
-      reinvested in their communities.
+    စေတနာနှင့်  အတတ်ပညာ နှစ်ခုပေါင်းပြီး နှစ်ဦးနှစ်ဖက် ကျေနပ်နှစ်လိုဖွယ်ရာ ဝန်ဆောင်ပေးရန်။
 intro:
   blurbs:
     - image: /img/coffee.png

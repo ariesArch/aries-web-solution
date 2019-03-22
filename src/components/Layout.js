@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 import './all.sass'
+import '../styles/global.css'
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -32,18 +33,18 @@ const TemplateWrapper = ({ children }) => (
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/img/apple-touch-icon.png"
+            href="/img/logo.jpeg"
           />
           <link
             rel="icon"
             type="image/png"
-            href="/img/favicon-32x32.png"
+            href="/img/logo.jpeg"
             sizes="32x32"
           />
           <link
             rel="icon"
             type="image/png"
-            href="/img/favicon-16x16.png"
+            href="/img/logo.jpeg"
             sizes="16x16"
           />
 
@@ -60,7 +61,9 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
         <Navbar />
-        <div>{children}</div>
+        <div style={{
+          fontFamily:'Pyidaungsu',
+        }} className="card-body">{children}</div>
         <Footer />
       </div>
     )}
