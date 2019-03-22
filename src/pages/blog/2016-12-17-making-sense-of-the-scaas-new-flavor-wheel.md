@@ -4,8 +4,10 @@ title: ES6 Variable Declaration
 date: 2019-03-23T07:35:10.000Z
 description: First time to learn ECMAScript2015
 tags:
-  - flavor
-  - tasting
+  - es6
+  - var
+  - let
+  - const
 ---
 When you declare a variable with the var keyword, it is declared globally, or locally if declared inside a function.
 
