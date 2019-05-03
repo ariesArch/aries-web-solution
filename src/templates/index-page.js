@@ -103,6 +103,13 @@ export const IndexPageTemplate = ({
                   Baganmart B2C Platform
                   </a>
                 </div>
+                <div className="column is-3">
+                  We also have experiences in developing government software projects. 
+                  HR Management System.
+                  Housing Management System.
+                  G2C Form Application System.
+                  These are government internal private softwares.
+                </div>
               </div>
               <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
