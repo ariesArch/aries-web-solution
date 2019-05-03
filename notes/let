@@ -1,0 +1,55 @@
+မဂၤလာပါခင္ဗ်ာ
+ဒီတစ္ခါ javascript ES6 ရ႕ဲ variable declaration ေတြထဲက let နဲ႔ const တို႔အေၾကာင္း ေလ႔လာၾကရေအာင္။
+ပထမဆုံးအေနနဲ႔ let
+
+var သုံးထားတဲ႔ variable ကို reassign လုပ္နိုင္ပါတယ္။ update လုပ္ႏိုင္ပါတယ္။ဆိုေတာ႔
+var name = "Ko Ko";
+let name = "Ki Ki";
+ဒီလို ေရးျပီး browser console မွာ run ၾကည္႔မယ္ဆိုရင္ name ဆိုတဲ႔ variable ကို ေၾကျငာျပီးသားျဖစ္ေၾကာင္း error ျပပါလိမ္႔မယ္။ပိုျပီးေသခ်ာေအာင္ ေနာက္တစ္မ်ိဳး run ၾကည္႔ရေအာင္။
+let yourname = "Ma Ma";
+var yourname = "Moe Moea"
+let city = "Yangon";
+let city = "Bago";
+console မွာ run ၾကည္႔လိုက္ရင္ အထက္ကအတိုင္း error ျပပါလိမ္႔မယ္။
+ဒါေၾကာင္႔ တစ္ခါေၾကျငာျပီးသား variable တစ္ခုကို let သုံးျပီး ထပ္မံ မေၾကျငာနိင္သလို let နဲ႔ ေၾကျငာထားတဲ႔ variable တစ္ခုကို ထပ္မံေၾကျငာေပးလို႔ မရပါဘူး။
+let က reassign လုပ္ေပးလို႔မရပါဘူး။
+let sad = "Sad";
+sad = "Cry";
+ဒါကို run ၾကည္႔လိုက္ပါက let ဟာ update လုပ္လို႔ေတာ႔ရတယ္ဆိုတာ သိပါလိမ္႔မယ္။
+const ကေတာ႔ reassign ေရာ update ေရာ မရပါဘူး။နမူနာအေနနဲ႔ အထက္က ဥပမာေတြကို const အစားထိုးျပီး စမ္းၾကည္႔ေစခ်င္ပါတယ္။
+သူ႔ကို မူရင္းတန္ဖို႔ အေသရွိတဲ႔ အရာေတြကို ေၾကျငာရာမွာပဲ သုံးၾကပါတယ္။ဥပမာ-
+const PI = 3.14 လိုမ်ိဳး သူ႔တန္ဖို႔က ေျပာင္းလဲလို႔မရ။ထပ္မံ assign လုပ္လို႔လဲမရပါဘူး။
+var ဆိုတာ function scope လို႔ ေရွ႔က အခန္းမွာ ေျပာခဲ႔ပါတယ္။ var keywoard သုံးျပီး variable တစ္ခုကို function တစ္ခုအတြင္းမွာ ေျကျငာထားမယ္ဆိုရင္ အဲဒီ variable ကို function အတြင္း ဘယ္ေနရာကမဆို လွမး္ေခၚသုံးနိုင္လို႔ function scope လို႔ေခၚပါတယ္။ function အျပင္က လွမ္းေခၚလို႔ေတာ႔မရပါဘူး။
+အခု let နဲ႔ const ေတြကိုေတာ႔ block scope လို႔ေခၚပါတယ္။ သူတို႔ကေတာ႔ function အတြငး္မွာမဟုတ္ဘူး။ {} တစ္ခုခုအတြင္းမွာ ေၾကျငာရျပီး အဲဒီ {} အတြင္းမွာပဲ လွမ္းေခၚသုံးစြဲလို႔ရပါတယ္။ ေအာက္က နမူနာေလးေတြကို စမ္းသပ္ၾကည္႔ရင္ ဘယ္လိုကြာျခားသလဲ သိပါလိမ္႔မယ္။
+1.
+var myname = "Ko Ko";
+function MyName(name) {
+if(name =="Ko Ko") {
+var city = "Yangon";
+
+}
+console.log(name + " lives in "+ city);
+}
+MyName("Ko Ko");
+-------------------------
+2.
+var myname = "Ko Ko";
+function MyName(name) {
+if(name =="Ko Ko") {
+let city = "Yangon";
+
+}
+console.log(name + " lives in "+ city);
+}
+MyName("Ko Ko");
+--------------------------
+3.
+var myname = "Ko Ko";
+function MyName(name) {
+if(name =="Ko Ko") {
+const city = "Yangon";
+
+}
+console.log(name + " lives in "+ city);
+}
+MyName("Ko Ko");

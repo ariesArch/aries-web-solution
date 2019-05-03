@@ -1,0 +1,67 @@
+let test;
+for(var i=0;i<3;i++) {
+	if(i ==2) {
+		test = i;
+	}
+}
+console.log(test);
+console.log(i);
+
+
+fn = function() {
+	var test="Hello";
+}
+console.log(test);
+
+var keyword ဟာ function တစ္ခုထဲမွာ ဘယ္လိုအလုပ္လုပ္သလဲ ၾကည္႔ရေအာင္လား။
+function SayHello() {
+var intro = "Hello";(declaring a variable using var keywoard in a function is a local variable)
+console.log(intro);
+}
+SayHello();
+console.log(intro);
+var ကို function အတြင္းမွာ ေၾကျငာထားျပီး function ရဲ႕ ဘယ္ေနရာကမဆို လွမ္းေခၚျပီး အသုံးျပဳနိုင္လို႔ သူ႔ကို function scope လို႔ေခၚပါတယ္။
+function အတြင္းမွာ ေၾကျငာလိုက္တဲ႔ variable ကိုေတာ႔ local variable လို႔ေခၚပါတယ္။
+SayHello(); ဆိုတာ SayHello ဆိုတဲ႔ function ကို invoke လုပ္လိုက္တာပါ။ function အတြင္းက code ေတြဟာ function တစ္ခု တည္ေဆာက္ျပီးတာနဲ႔ အလုပ္မလုပ္ပါဘူး။
+အဲဒီ function ကို invoke လုပ္ေပးမွ အလုပ္လုပ္ပါတယ္။ "call a function","start a function", or "execute a function" စသျဖင္႔ အမ်ိဳးမ်ိဳးေခၚဆိုၾကပါတယ္။
+function က intro ကို output ထုတ္ထားေတာ႔ "Hello" ဆိုတဲ႔ စာသားကို ေတြ႔ရတာပါ။
+ေအာက္ဆုံးက console.log(intro); ကို run မယ္ဆိုရင္ "Hello" ဆိုတဲ႔ စာသား ထြက္လာမွမဟုတ္ပါဘူး။
+intro ဆိုတာ အခုခ်ိန္မွာ local variable တစ္ခုျဖစ္ေနတာမို႔ သူ႔ကို ေၾကျငာထားတဲ႔ function အတြင္းမွာပဲ အလုပ္လုပ္ပါတယ္။
+အခုဟာက function အျပင္ဘက္မွာ သူ႔ကို output လာထုတ္တာဆိုေတာ႔ သူကေတာ႔ မရပါဘူး။
+ဒီလိုဆိုရင္ေရာ..
+var intro = "Hello";
+function SayHello() {
+console.log(intro);
+}
+SayHello();
+console.log(intro);
+ဒီေနရာမွာေတာ႔ var intro ကို function အျပင္မွာ ေၾကျငာထားတာမို႔ သူ႔ကို global variable လို႔ေခၚပါတယ္။
+ဘယ္ေနရာကေနေန လွမ္းေခၚလို႔ရတာမို႔ output ထုတ္တဲ႔ ၂ ေၾကာင္းလုံး အလုပ္လုပ္ပါလိမ္႔မယ္။
+
+
+Block Scope Variable
+====================
+var keyword variable တစ္ခုကိုသုံးျပီး scope ေတြအတြင္းမွာ အလုပ္လုပ္ၾကည္႔ပါမယ္။
+
+
+for(var i = 1; i<3; i++) {
+	if(i === 2) {
+	function SayHello() {
+		return i;
+	}
+	}
+}
+console.log(SayHello());
+console.log(i);
+
+var သုံးျပီးေၾကျငာထားျခင္းေၾကာင္႔
+
+for(let i = 1; i<3; i++) {
+	if(i === 2) {
+	function SayHello() {
+		return i;
+	}
+	}
+}
+console.log(SayHello());
+console.log(i);

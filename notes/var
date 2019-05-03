@@ -1,0 +1,44 @@
+မဂၤလာပါခင္ဗ်
+JavaScript မွာ variable ေၾကျငာတဲ႔အခါ var , let , sonst ဆိုတဲ႔ keyword ေတြကို သုံးျပီးေၾကျငာ တာ ေတြ႔ဖူးၾကမွာပါ။
+
+var ဆိုတာ ဘယ္လိုလဲ ၾကည္႔ရေအာင္.....
+
+variable တစ္ခုကို var နဲ႔တြဲျပီးေၾကျငာပါ႔မယ္။
+var intro = "Hello";(declare a variable intro)
+console.log(intro);(output the variable)
+
+မိမိ browser ရဲ႕ console မွာ အထက္က ၂ ေၾကာင္းကို run လိုက္မယ္ဆိုရင္ Hello ဆိုတဲ႔ စာသားေလးေပၚလာပါလိမ္႔မယ္။
+ဒါကေတာ႔ ရွင္းပါတယ္။ေနာက္ထပ္ ဆက္ၾကည္႔ရေအာင္...
+
+var intro = "Hello";(declare a variable intro)
+intro = "Hi";(update the variable intro)
+console.log(intro);(output the variable)
+အခုလို ၃ ေၾကာင္းကို browser console မွာ run ၾကည္႔မယ္ဆိုရင္ေတာ႔ update လုပ္ထားတဲ႔ variable intro ရဲ႕ တန္ဖိုး "Hi" ကို ထုတ္ျပပါလိမ္႔မယ္။
+ဆိုလိုခ်င္တာကေတာ႔ var keywork သုံးျပီးေၾကျငာထားတဲ႔ variable တစ္ခုကို မိမိ ေျပာင္းလဲခ်င္တဲ႔ တန္ဖိုးတစ္ခု ကိုေျပာင္းလဲသတ္မွတ္ေပးနိင္တဲ႔အေၾကာင္းပါ။
+
+var intro = "Hello";(declare a variable intro)
+var intro = "Hey";(reassign the variable intro)
+console.log(intro);(output the variable)
+အခုလို ၃ ေၾကာင္းကို browser console မွာ run ၾကည္႔မယ္ဆိုရင္ေတာ႔ reassign လုပ္ထားတဲ႔ variable intro ရဲ႕ တန္ဖိုး "Hi" ကို ထုတ္ျပပါလိမ္႔မယ္။
+var သုံးထားတဲ႔ variable name ကို ေနာက္ထပ္ variable အသစ္တစ္ခုအျဖစ္ ျပန္လည္ ေၾကျငာ နိုင္ပါေသးတယ္။
+
+
+
+
+ေနာက္မွ let တို႔ const တို႔အေၾကာင္းကုိလညး္ ေျပာျပပါဦးမယ္။ သင္ခန္းစာအေနနဲ႔ေတာ႔
+var intro = "Hello";
+function SayHello() {
+var intro = "Hey";
+console.log(intro);
+}
+SayHello();
+console.log(intro);
+အထက္ပါ scope ေလးကို run ၾကည္႔ေစခ်င္ပါတယ္။ ျပီးရင္
+var intro = "Hello";
+function SayHello() {
+intro = "Hey";
+console.log(intro);
+}
+SayHello();
+console.log(intro);
+ဒါေလးကိုလည္း ထပ္စမ္းသပ္ၾကည္႔ပါလို႔ဦးလို႔။ ဘာေတြ ထူးျခား ကြာဟသြားသလဲဆိုတာ .

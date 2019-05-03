@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import Features from '../components/Features'
 
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
@@ -72,7 +73,8 @@ export const IndexPageTemplate = ({
                 <div className="tile">
                   <h6 className="subtitle">{description}</h6>
                 </div>
-              </div>  
+              </div> 
+              
               <div className="content">
                 <div className="tile">
                   <h1 className="title">{mainpitch.title}</h1>
@@ -80,7 +82,28 @@ export const IndexPageTemplate = ({
                 <div className="tile">
                   <h6 className="subtitle">{mainpitch.description}</h6>
                 </div>
-              </div>        
+              </div>   
+              <h2>Current Portfolio</h2>
+              <h4>Restaurant Management System for Glad House Coffee & Noodle(Naypyitaw)</h4>
+              <Features gridItems={intro.blurbs} /> 
+              <div className="column is-12">
+              <h2>Products</h2>
+                <div className="column is-6">
+                  <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dezfood.com.mm%26fbclid%3DIwAR3_tlXzD99jkS-eaQuL_a9-iM7wFDD8NSjVGuzvm22P-HKZv6FLXWMFfSI&h=AT1UawMoWdCC53gsWx6l1DhdlRUxv7KJvnK1smPFHIe6pLtcf7Tq8bfCEY23Fygdx0FvLQKi0Sj4vH5Kcw330Y78thHw3kVrhcAQad4D_kd_Ptn-mzXCTE2gmNXT_w">
+                  EZ Food Mobile Application
+                  </a>
+                </div>
+                <div className="column is-3">
+                  <a href="https://play.google.com/store/apps/details?id=com.onekyat.app&fbclid=IwAR29MB54AVYUXYsmtPQSYrenMifn0pxoTuQn0u8ZXnQj9PNBsQQD-vRmP1Y">
+                  OneKyat - Myanmar Buy & Sell
+                  </a>
+                </div>
+                <div className="column is-3">
+                <a href="https://baganmart.com/">
+                  Baganmart B2C Platform
+                  </a>
+                </div>
+              </div>
               <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest Blog Posts
