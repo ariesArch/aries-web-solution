@@ -86,31 +86,13 @@ export const IndexPageTemplate = ({
               <h2>Current Portfolio</h2>
               <h4>Restaurant Management System for Glad House Coffee & Noodle(Naypyitaw)</h4>
               <Features gridItems={intro.blurbs} /> 
-              <div className="column is-12">
-              <h2>Products</h2>
-                <div className="column is-6">
-                  <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dezfood.com.mm%26fbclid%3DIwAR3_tlXzD99jkS-eaQuL_a9-iM7wFDD8NSjVGuzvm22P-HKZv6FLXWMFfSI&h=AT1UawMoWdCC53gsWx6l1DhdlRUxv7KJvnK1smPFHIe6pLtcf7Tq8bfCEY23Fygdx0FvLQKi0Sj4vH5Kcw330Y78thHw3kVrhcAQad4D_kd_Ptn-mzXCTE2gmNXT_w">
-                  EZ Food Mobile Application
-                  </a>
-                </div>
-                <div className="column is-3">
-                  <a href="https://play.google.com/store/apps/details?id=com.onekyat.app&fbclid=IwAR29MB54AVYUXYsmtPQSYrenMifn0pxoTuQn0u8ZXnQj9PNBsQQD-vRmP1Y">
-                  OneKyat - Myanmar Buy & Sell
-                  </a>
-                </div>
-                <div className="column is-3">
-                <a href="https://baganmart.com/">
-                  Baganmart B2C Platform
-                  </a>
-                </div>
-                <p>
-                  We also have experiences in developing government software projects. 
-                  HR Management System.
-                  Housing Management System.
-                  G2C Form Application System.
-                  These are government internal private softwares.
-                </p>
-              </div>
+              <p>
+                We also have experiences in developing government software projects. 
+                HR Management System.
+                Housing Management System.
+                G2C Form Application System.
+                These are government internal private softwares.
+              </p>
               <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest Blog Posts
