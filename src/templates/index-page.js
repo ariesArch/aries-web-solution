@@ -83,16 +83,6 @@ export const IndexPageTemplate = ({
                   <h6 className="subtitle">{mainpitch.description}</h6>
                 </div>
               </div>   
-              // <h2>Current Portfolio</h2>
-              // <h4>Restaurant Management System for Glad House Coffee & Noodle(Naypyitaw)</h4>
-              // <Features gridItems={intro.blurbs} /> 
-              // <p>
-              //   We also have experiences in developing government software projects. 
-              //   HR Management System.
-              //   Housing Management System.
-              //   G2C Form Application System.
-              //   These are government internal private softwares.
-              // </p>
               <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest Blog Posts
